@@ -1,17 +1,25 @@
-<template>
-       <h1>
-        MAIN
-    </h1>
-</template>
-
 <script>
+import AppSearch from'./MainSearch.vue';
+import MainCharacterList from'./MainCharacterList.vue';
+
 export default {
+    components: {
+        AppSearch,
+        MainCharacterList
+    },
     data() {
         return {
         }
     }
 }
 </script>
+
+
+<template>
+    <AppSearch/>
+    <MainCharacterList/>
+</template>
+
 
 <style lang="scss">
 

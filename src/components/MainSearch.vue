@@ -1,7 +1,3 @@
-<template>
-
-</template>
-
 <script>
 export default {
     data() {
@@ -10,6 +6,12 @@ export default {
     }
 }
 </script>
+
+
+<template>
+
+</template>
+
 
 <style lang="scss">
 
