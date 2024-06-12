@@ -18,7 +18,7 @@ export default {
             axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php')
                 .then((response) => {
                     console.log(response.data.data); 
-                    this.characters = response.data.data.slice(0,20);
+                    this.characters = response.data.data.slice(100,120);
                 })
                 .catch((error) => {
                     // handle error
@@ -41,4 +41,5 @@ export default {
     </main>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+</style>
