@@ -20,7 +20,7 @@ export default {
 
 
 <template>
-    <section class="characters-list container">
+    <section class="characters-list container p-5">
         <div class="row">
             <div class="col-12">
                 <h2>
@@ -33,7 +33,7 @@ export default {
                         <div id="card" class="card" style="width: 100%;">
                             <img class="card-img-top" :src="character.card_images[0].image_url" alt="Card image cap">
                             <div class="card-body">
-                                <h5 id="color-white" class="card-title fw-bold">{{ character.name }}</h5>
+                                <h5 id="color-white" class="card-title fw-bold fs-6">{{ character.name }}</h5>
                                 <p class="card-text fs-6">{{ character.type }}</p>
                             </div>
                         </div>
