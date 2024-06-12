@@ -36,8 +36,9 @@ export default {
 </script>
 
 <template>
-    <AppSearch />
-    <MainCharacterList :characters="characters" />
+    <main>
+        <MainCharacterList :characters="characters" />
+    </main>
 </template>
 
 <style lang="scss"></style>
