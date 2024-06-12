@@ -26,4 +26,8 @@ export default {
   @use './node_modules/bootstrap/scss/bootstrap.scss';
   @use './styles/partials/mixins' as *;
   @use './styles/partials/variables' as *;
+
+  body{
+    background-color: #d48f38;
+  }
 </style>
