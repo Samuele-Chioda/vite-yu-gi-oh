@@ -28,20 +28,25 @@ export default {
                 </h2>
             </div>
             <div class="col-12">
-                <article v-for="character in characters" :key="character.id">
-                    <div class="card" style="width: 100%;">
-                        <img class="card-img-top" src="" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                <div class="row">
+                    <article v-for="character in characters" :key="character.id" class="col-3">
+                        <div class="card" style="width: 100%;">
+                            <img class="card-img-top" :src="character.card_images[0].image_url" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ character.name }}</h5>
+                                <p class="card-text">{{ character.desc }}</p>
+                            </div>
                         </div>
-                    </div>
-                    {{ character.name }}
-                </article>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
 </template>
 
 
-<style lang="scss"></style>
+<style lang="scss">
+.container {
+    background-color: white;
+}
+</style>
