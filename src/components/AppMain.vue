@@ -16,15 +16,15 @@ export default {
     methods: {
         getCharacters() {
             axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php')
-                .then(function (response) {
-                    // handle success
-                    console.log(response);
+                .then((response) => {
+                    console.log(response.data.data); 
+                    this.characters = response.data.data.slice(0,20);
                 })
-                .catch(function (error) {
+                .catch((error) => {
                     // handle error
                     console.log(error);
                 })
-                .finally(function () {
+                .finally(() => {
                     // always executed
                 });
         }
@@ -35,11 +35,9 @@ export default {
 }
 </script>
 
-
 <template>
     <AppSearch />
-    <MainCharacterList />
+    <MainCharacterList :characters="characters" />
 </template>
-
 
 <style lang="scss"></style>
