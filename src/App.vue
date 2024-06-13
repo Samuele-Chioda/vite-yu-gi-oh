@@ -23,10 +23,10 @@ export default {
 
 <style lang="scss">
   @use './styles/general.scss';
-  @use './node_modules/bootstrap/scss/bootstrap.scss';
   @use './styles/partials/mixins' as *;
+  @use './node_modules/bootstrap/scss/bootstrap.scss';
   @use './styles/partials/variables' as *;
-
+  
   body{
     background-color: #d48f38;
   }

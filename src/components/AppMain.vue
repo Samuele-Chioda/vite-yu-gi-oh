@@ -18,7 +18,7 @@ export default {
             axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php')
                 .then((response) => {
                     console.log(response.data.data); 
-                    this.characters = response.data.data.slice(100,120);
+                    this.characters = response.data.data.slice(0,20);
                 })
                 .catch((error) => {
                     // handle error
@@ -37,6 +37,7 @@ export default {
 
 <template>
     <main>
+        <AppSearch @searched="" />
         <MainCharacterList :characters="characters" />
     </main>
 </template>
